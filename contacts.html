@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Francesco Montanaro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logo.ico">
+    </head>
+    <header>
+        <div>
+            <a href="index.html">Francesco Montanaro</a>
+        </div>
+        <div class="header-btns">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a class="selected" href="contacts.html">Contacts</a>
+        </div>
+    </header>
+    <body>
+        <div class="btn not-active" onclick="toggleButton(this);">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> 
+        <div id="menu" class="menu">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a class="selected" href="contacts.html">Contacts</a>
+        </div>
+        <div class="main-content">
+            <h1 class="title">Contacts</h1>
+            <div class="contacts-container">
+                <div class="contacts-subcontainer">
+                    <h2 class="sub-title">Send me a message</h2>
+                    <form class="message-container" onsubmit='event.preventDefault(); send_message();'>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input id="object" placeholder="Object" required>
+                        <textarea id="message" placeholder="Message" required rows="10"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contacts-subcontainer">
+                    <h2 class="sub-title">Follow me</h2>
+                    <div class="social-btns">
+                        <a title="linkedin" href="https://www.linkedin.com/in/francesco-montanaro-59452a216/" class="social-btn linkedin"></a>
+                        <a title="twitter" href="https://twitter.com/_CSRF1534" class="social-btn twitter"></a>
+                        <a title="github" href="https://github.com/FrancescoMontanaro" class="social-btn github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function send_message(){
+            const email = document.getElementById("email").value;
+            const object = document.getElementById("object").value;
+            const message = document.getElementById("message").value;
+
+            document.location.href = "mailto:francesco.montanaro998@gmail.com?subject=" + encodeURIComponent(object)+ "&body=" + encodeURIComponent(message);
+
+        }
+    </script>
+    <script src="js/menu.js"></script>
+</html>

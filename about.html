@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Francesco Montanaro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logo.ico">
+    </head>
+    <header>
+        <div>
+            <a href="index.html">Francesco Montanaro</a>
+        </div>
+        <div class="header-btns">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a class="selected" href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+    </header>
+    <body>
+        <div class="btn not-active" onclick="toggleButton(this);">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> 
+        <div id="menu" class="menu">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a class="selected" href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="main-content" style="padding-bottom: 50px;">
+            <h1 class="title">About me</h1>
+            <div class="about-section">
+                <div class="about-subsection about-description-subsection">
+                    <div>
+                        My name is Francesco Montanaro and I am a <span id="age"></span> years old Italian boy.<br>
+                        I am currently a Master Degree Student in <b>Computer Science and Engineering</b> at the <b>Politecnico of Milan</b>. 
+                        Since childhood I have always loved technology and I find it amazing to watch as the digital revolution sculpts society and solves problems at a rate that has never before been seen.
+                        In recent years I have become passionate about the field of <b>Artificial Intelligence</b>, this is why I chose it as a 
+                        specialization for my Master's Degree studies.<br>
+                        I am determined to improve my skills and knowledge more and more and do my part in solving problems that can make the world a better place for everyone.
+                        <form style="margin-top: 10px;" method="get" action="docs/CV_FrancescoMontanaro.pdf">
+                            <button type="submit">Open My Curriculum Vitae</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="about-subsection about-images-subsection">
+                    <img src="images/degree.JPG" width="60%" style="border-radius: 10px;">
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="about-subsection about-images-subsection">
+                    <div>
+                        <img src="images/polimi.png" width="50%">
+                        <br>
+                        <img src="images/unicas.png" width="30%" style="margin-top: 30px;">
+                    </div>
+                </div>
+                <div class="about-subsection about-description-subsection">
+                    <div>
+                        <h2 class="sub-title">Studies</h2>
+                        <section>
+                            <h3 style="margin: 0;">Master Degree</h3>
+                            From: 26/09/2019 - To: In progress...<br>
+                            Politecnico of Milan - <b>Computer Science and Engineering</b><br>
+                        </section>
+                        <section style="margin-top: 15px;">
+                            <h3 style="margin: 0;">Bachelor Degree</h3>
+                            From: 26/09/2016 - To: 23/07/2019<br>
+                            University of Cassino and Southern Lazio - <b>Computer Science and Telecommunications Engineering</b>
+                            Thesis on ‘Handwriting Analysis for the Diagnosis of Cognitive Impairment’<br>
+                        </section>
+                        <section style="margin-top: 15px;">
+                            <h3 style="margin: 0;">High School</h3>
+                            From: 13/09/2011 - To: 3/07/2016<br>
+                            Liceo scientifico Gioacchino Pellecchia (<b>Scientific High School</b>)<br>
+                        </section>
+                        <section style="margin-top: 15px;">
+                            <h3 style="margin: 0;">Languages</h3>
+                            From: 12/09/2009 - To: 20/06/2018<br>
+                            Advanced Cambridge English Qualification - Level C1<br>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="about-subsection about-description-subsection">
+                    <div>
+                        <h2 class="sub-title">Work Experience</h2>
+                        Since January 2020 I have worked as a freelancer in several digital projects as a <b>Fullstack Developer</b> of <b>Web and Mobile Applications</b>. 
+                        I also developed Tools and Automatic Systems for online <b>Data Extraction and Processing</b> (Please visit the <a style="text-decoration: none; color: #2f75ef;" href="projects.html">Projects</a> page for additional information).<br>
+                        During my studies and work experience, in addition to improving my skills and knowledge, I also learned the importance of teamwork and cooperation, always trying to solve problems within deadlines and with the utmost dedication.
+                    </div>
+                </div>
+                <div class="about-subsection about-images-subsection">
+                    <div id="shell" class="shell" style="width: 90%; font-size: 14px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/about.js"></script>
+    <script>
+        function getAge(d1, d2){
+            d2 = d2 || new Date();
+            var diff = d2.getTime() - d1.getTime();
+            return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+        }
+
+        const born_date = new Date(1998, 2, 17);
+        const current_date = new Date();
+
+        document.getElementById("age").innerHTML = getAge(born_date, current_date);
+    </script>
+    <script src="js/menu.js"></script>
+</html>

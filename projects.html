@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Francesco Montanaro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logo.ico">
+    </head>
+    <header>
+        <div>
+            <a href="index.html">Francesco Montanaro</a>
+        </div>
+        <div class="header-btns">
+            <a href="index.html">Home</a>
+            <a class="selected" href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+    </header>
+    <body>
+        <div class="btn not-active" onclick="toggleButton(this);">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> 
+        <div id="menu" class="menu">
+            <a href="index.html">Home</a>
+            <a class="selected" href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="main-content" style="padding-bottom: 50px;">
+            <h1 class="title">Projects</h1>
+            <div class="project">
+                <div class="project-section project-description-section">
+                    <h2 class="sub-title">SharkIO</h2>
+                    <b>Date: </b>02/2021<br>
+                    <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/SharkIO">GitHub</a><br>
+                    <b>Technologies Involved: </b>HTML, CSS, Javascript, Node.js, MongoDB.<br>
+                    <div class="project-description">
+                        <b>Project Description: </b>SharkIO is a Web Application which allows users to subscribe and manage their subscription to a generic digital service (in this case a google chrome extension).
+                        To access the service users have to login with their Discord Account. Once logged in, they can subscribe to the service by paying with their credit card. The payment 
+                        flow has been implemented by using Stripe's technologies. In this case, the subscription is composed by an initial setup fee, plus a recurrent monthly payment. Once that 
+                        users are subscribed to the service, they can access their personal dashboard, through which thay can retrive all the information related to their subscription, or perform 
+                        some actions such as:
+                        <ul>
+                            <li>
+                                Manage their subscription.
+                            </li>
+                            <li>
+                                Join the Official Discord's Server of the Service.
+                            </li>
+                            <li>
+                                Unbind their license from their current Discord Account.
+                            </li>
+                            <li>
+                                Reset the IP address on which the software is binded.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-section project-images-section">
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 10px;">
+                        <img width="49%" style="border-radius: 10px; margin-right: 10px;" src="images/sk3.png">
+                        <img width="49%" style="border-radius: 10px;" src="images/sk2.png">
+                    </div>
+                    <img width="100%" style="border-radius: 10px;" src="images/sk1.png">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-section project-images-section">
+                    <div class="pluto-images" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <div style="width: 40%; margin-right: 10px;">
+                            <img width="100%" style="border-radius: 10px; margin-bottom: 10px;" src="https://user-images.githubusercontent.com/56433128/124288572-9c892680-db51-11eb-9521-fcc2d96d683e.png">
+                            <img width="100%" style="border-radius: 10px;" src="https://user-images.githubusercontent.com/56433128/124291650-1242c180-db55-11eb-985d-493ca74929bf.jpg">
+                        </div>
+                        <video style="border-radius: 10px;" width="53.5%" controls poster="images/preview.PNG">
+                            <source src="https://user-images.githubusercontent.com/56433128/124289363-8334aa00-db52-11eb-8380-9e9f99b27d3f.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="project-section project-description-section">
+                    <h2 class="sub-title">Pluto</h2>
+                    <b>Date: </b>04/2021<br>
+                    <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/Pluto">GitHub</a><br>
+                    <b>Technologies Involved: </b>Arduino uno, Raspberry Pi, C++, Python, Node.js, Javascript, HTML, CSS.<br>
+                    <div class="project-description">
+                        <b>Project Description: </b>
+                        Pluto is a robot built to engage people to visit the virtual exposition of the space exhibition at 
+                        the Museo Nazionale Scienza e Tecnologia Leonardo da Vinci during the Covid pandemic. 
+                        The objective was to create one single robot, easy to use, that could be deployed by anyone who 
+                        reads the simple manual and that accomplish two different missions:
+                        <ul>
+                            <li>
+                                First scenario is during covid, so the idea was to attract people at 
+                                train stations, or semi-public areas with the objective of getting peoples 
+                                attention and inviting them to visit the virtual exposition.
+                            </li>
+                            <li>
+                                The second one was to be placed inside the museum after it opens, being part 
+                                of the exhibition itself.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-section project-description-section">
+                    <h2 class="sub-title">CryptoSimulator</h2>
+                    <b>Date: </b>01/2021<br>
+                    <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/CryptoSimulator">GitHub</a><br>
+                    <b>Technologies Involved: </b>React Native, Tensorflow, Expo, Firebase, Javascript, Node.js, Python, Google Cloud Platform.<br>
+                    <div class="project-description">
+                        <b>Project Description: </b>CryptoSimulator is a cross-platform mobile application for monitoring and 
+                        forecasting the trend of cryptocurrencies over time. It allows users to be 
+                        always up to date on the value of the most important cryptocurrencies by 
+                        exploiting interactive graphs and plots. By the implementation of AI algorithms 
+                        it allows users to monitor and predict cryptocurrency’s trends and simulate 
+                        the future of their preferred assets. In other words, thanks to an artificial 
+                        intelligence engine, based on a recurrent neural network trained to predict future trends, 
+                        CryptoSimulator helps users to make decisions about when to sell or buy the desired assets 
+                        in order to maximize profits and reduce losses. The application expands its functionalities 
+                        by allowing users to authenticate and to create and manage their personal wallet with the
+                        cryptocurrencies owned. In particular, users can always be up to date on the current 
+                        value of their wallet and understand how it could evolve over time thanks to the 
+                        predictions made by the AI.
+                    </div>
+                </div>
+                <div class="project-section project-images-section">
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672469-eaa23f80-d1cb-11eb-8ebf-f21aca9685fe.png">
+                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672477-ef66f380-d1cb-11eb-82e5-c62845a554b3.png">
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672481-f130b700-d1cb-11eb-9052-dfdbc4fe1709.png">
+                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672483-f42ba780-d1cb-11eb-8530-ffc9115dd509.png">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-section project-images-section">
+                    <div class="pluto-images" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <div style="width: 52%; margin-right: 10px;">
+                            <img width="100%" style="border-radius: 10px; margin-bottom: 10px;" src="images/mask1.jpg">
+                            <img width="100%" style="border-radius: 10px;" src="images/mask2.jpg">
+                        </div>
+                        <div style="width: 48%;">
+                            <img style="border-radius: 10px;" width="100%" src="images/mask3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-section project-description-section">
+                    <h2 class="sub-title">Mask Recognition</h2>
+                    <b>Date: </b>11/2020<br>
+                    <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/Mask-Recognition">GitHub</a><br>
+                    <b>Technologies Involved: </b>Python, Tensorflow.<br>
+                    <div class="project-description">
+                        <b>Project Description: </b>
+                        The project is dedicated to solve an image classification problem on a proposed dataset. 
+                        In particular, the purpose is to classify images depicting groups of people based on the number of masked people. 
+                        In the specific, the solution must discriminate between images depending on the following cases:
+                        <ul>
+                            <li>
+                                All the people in the image are wearing a mask.
+                            </li>
+                            <li>
+                                No person in the image is wearing a mask.
+                            </li>
+                            <li>
+                                Someone in the image is not wearing a mask.
+                            </li>
+                        </ul>
+                        Being a classification problem, given an image, the goal has been to predict the correct class label by implementing 
+                        a Convolutional Neural Network using the popular Tensorflow framework. Different approaches has been used in order to select the model with the best performances on the specified task. 
+                        In particular, the approaches used consisted of implementing several models from scratch (in order to select the one with the right complexity w.r.t. the training data) 
+                        and of exploiting the knowledge of some pretrained models by using the Transfer Learning Technique.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/menu.js"></script>
+</html>
