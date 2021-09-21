@@ -124,6 +124,7 @@ input, textarea{
     background-color: rgb(33,34,38);
     padding: 10px; 
     border-radius: 10px;
+    vertical-align: text-top;
 }
 .selected::after{
     opacity: 1;
