@@ -24,6 +24,11 @@ header a, .menu a{
     color: #000;
     position: relative;
 }
+.index-header{
+    z-index: 2300;
+    background-color: transparent;
+    border-bottom: none;
+}
 .menu{
     font-size: large;
 }
@@ -408,7 +413,7 @@ input, textarea{
     position: fixed;
     top: 25px;
     right: 20px;
-    z-index: 200;
+    z-index: 2500;
     width: 30px;
     cursor: pointer;
 }
@@ -543,13 +548,13 @@ input, textarea{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 10;
+    z-index: 2400;
     background-color: #fff;
     margin: 0;
     overflow: hidden;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .header-btns{
         display: none;
     }
@@ -610,6 +615,26 @@ input, textarea{
 
 .not-found h1, h2, p{
     margin: 0;
+}
+
+.particels{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 2000;
+}
+
+.index-main-area{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 2200;
 }
 
 @media only screen and (max-width: 1180px) {
@@ -701,6 +726,10 @@ input, textarea{
     .project .project-description-section{
         order: 1;
         -webkit-order: 1;
+    }
+    .index-header{
+        background-color: #fff;
+        border-bottom: 1px solid #e6e6e6e6;
     }
 }
 
