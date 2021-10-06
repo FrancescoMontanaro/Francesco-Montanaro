@@ -1,17 +1,15 @@
 var body = document.getElementsByTagName("BODY")[0];
-console.log(body);
+var num_particels = Math.floor(window.innerWidth / 12);
+var colors = [ '#2f75ef'];
 
-window.onload = init();
 function init(){
   canvas = document.getElementById('particels'); 
   context = canvas.getContext('2d');
   canvas.height = body.scrollHeight;
   canvas.width = window.innerWidth;
-  colors = [ '#2f75ef'];
   window.addEventListener('resize', canvasResize,false);
   dotsHolder = [];
-  for(i = 0; i < 100; i++)
-  {
+  for(i = 0; i < num_particels; i++){
     dotsHolder.push(new dots());
   }
 
@@ -44,28 +42,27 @@ function init(){
 }
 
 function canvasResize(){
- canvas.height = body.scrollHeight;
- canvas.width = window.innerWidth;
- cancelAnimationFrame(animate);
+  canvas.height = body.scrollHeight;
+  canvas.width = window.innerWidth;
+  cancelAnimationFrame(animate);
 }
 
-
 function dots(){
- this.xPos = Math.random()*canvas.width;
- this.yPos = Math.random()*canvas.height;
- this.color = colors[Math.floor(Math.random()*colors.length)];
- this.radius = Math.random()*8; 
- this.vx = Math.cos(this.radius);
- this.vy = Math.sin(this.radius);
- this.stepSize = Math.random() / 10;
- this.step = 0;
- this.friction = 7;
- this.speedX = this.vx;
- this.speedY = this.vy;
-} 
+  this.xPos = Math.random() * canvas.width;
+  this.yPos = Math.random() * canvas.width;
+  this.color = colors[Math.floor(Math.random() * colors.length)];
+  this.radius = Math.random() * 7; 
+  this.vx = Math.cos(this.radius);
+  this.vy = Math.sin(this.radius);
+  this.stepSize = Math.random() / 10;
+  this.step = 0;
+  this.friction = 7;
+  this.speedX = this.vx;
+  this.speedY = this.vy;
+}
 
 dots.draw = function(){
-  context.clearRect(0,0,canvas.width,canvas.height);
+  context.clearRect(0, 0, canvas.width, canvas.height);
   for(var c = 0; c < dotsHolder.length;c++){
     dot = dotsHolder[c]; 
     context.beginPath();
@@ -76,9 +73,9 @@ dots.draw = function(){
     dot.yPos += dot.vy;
     if(dot.xPos < -50) {dot.xPos = canvas.width+50;}
     if(dot.yPos < -50) {dot.yPos = canvas.height+50;}
-    if(dot.xPos > canvas.width+50) {dot.xPos = -50;}
-    if(dot.yPos > canvas.height+50) {dot.yPos = -50;}
-    context.arc(dot.xPos,dot.yPos,(dot.radius/2.5),0,2*Math.PI,false);
+    if(dot.xPos > canvas.width + 50) {dot.xPos = -50;}
+    if(dot.yPos > canvas.height + 50) {dot.yPos = -50;}
+    context.arc(dot.xPos, dot.yPos, (dot.radius / 2.5), 0, 2*Math.PI, false);
     context.fill();
   }
 }
@@ -87,5 +84,7 @@ function animate(){
   requestAnimationFrame(animate);
   dots.draw();
 }
+
+window.onload = init();
 
 animate();
