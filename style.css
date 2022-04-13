@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
+
 :root{
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Nunito', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
@@ -61,7 +64,6 @@ body{
     margin: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    font-weight: 500;
 }
 button{
     border-radius: 7px;
@@ -367,6 +369,10 @@ input, textarea{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.project .project-section .sub-title{
+    margin-bottom: 10px;
 }
 
 .project:nth-child(n+3){

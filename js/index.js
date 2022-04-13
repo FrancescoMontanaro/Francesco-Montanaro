@@ -8,33 +8,33 @@ function write_to_shell(shell, string_chars){
     shell.innerHTML = "|";
 
     const interval = setInterval(function(){
-    if(iterator >= string_chars.length){
-        clearInterval(interval);
+        if(iterator >= string_chars.length){
+            clearInterval(interval);
 
-        let dash_iterations = 0;
-        const dash_interval = setInterval(function(){
-            if(dash_iterations % 2 == 0)
-                shell.innerHTML = string.substring(0, string.length);
-            else
-                shell.innerHTML = shell.innerHTML + "|";
-            if(dash_iterations >= 4){
-                clearInterval(dash_interval);
-                shell.innerHTML += "<br>>>> "
-                setTimeout(function(){
-                    shell.innerHTML += "Hello, World!";
-                }, 500);
-            }
-            dash_iterations ++;
-        },500);
-    }
-    else{
-        shell.innerHTML = string.substring(0, iterator + 1) + "|";
-        iterator ++;
-    }
+            let dash_iterations = 0;
+            const dash_interval = setInterval(function(){
+                if(dash_iterations % 2 == 0)
+                    shell.innerHTML = string.substring(0, string.length);
+                else
+                    shell.innerHTML = shell.innerHTML + "|";
+                if(dash_iterations >= 4){
+                    clearInterval(dash_interval);
+                    shell.innerHTML += "<br>>>> "
+                    setTimeout(function(){
+                        shell.innerHTML += "Hello, World!";
+                    }, 500);
+                }
+                dash_iterations ++;
+            },500);
+        }
+        else{
+            shell.innerHTML = string.substring(0, iterator + 1) + "|";
+            iterator ++;
+        }
     },100);
 }
 
 write_to_shell(shell, string_chars);
-setInterval(function(){
+/* setInterval(function(){
     write_to_shell(shell, string_chars);
-}, 9000);
+}, 9000); */
