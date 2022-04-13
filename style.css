@@ -8,6 +8,7 @@
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
+    --small-font-size: 1.05rem;
 }
 
 header{
@@ -750,7 +751,7 @@ input, textarea{
         padding-right: 20px;
     }
     html{
-        font-size: smaller !important;
+        font-size: var(--small-font-size);
     }
     .title{
         font-size: 30px;
