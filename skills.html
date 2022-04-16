@@ -1,6 +1,7 @@
-<html>
+<html class="dark-mode">
     <head>
         <title>Francesco Montanaro</title>
+        <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="images/logo.ico">
@@ -15,6 +16,7 @@
             <a class="selected" href="skills.html">Skills</a>
             <a href="about.html">About</a>
             <a href="contacts.html">Contacts</a>
+            <img class="theme-btn" style="margin-left: 15px;" onclick="changeColorScheme();"></img>
         </div>
     </header>
     <body>
@@ -29,10 +31,11 @@
             <a class="selected" href="skills.html">Skills</a>
             <a href="about.html">About</a>
             <a href="contacts.html">Contacts</a>
+            <img class="theme-btn" onclick="changeColorScheme();"></img>
         </div>
         <div class="main-content">
             <h1 class="title">Skills</h1>
-            During my Studies and my Work Experience I developed the following Skills:<br><br>
+            During my Studies and my Work Experience I developed the following skills:<br><br>
             <div class="skills">
                 <div class="skills-section">
                     <h4>Programming Languages</h4>
@@ -283,5 +286,6 @@
             </div>
         </div>
     </body>
+    <script src="js/colorScheme.js"></script>
     <script src="js/menu.js"></script>
 </html>

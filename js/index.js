@@ -35,6 +35,3 @@ function write_to_shell(shell, string_chars){
 }
 
 write_to_shell(shell, string_chars);
-/* setInterval(function(){
-    write_to_shell(shell, string_chars);
-}, 9000); */

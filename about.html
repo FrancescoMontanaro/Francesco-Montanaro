@@ -1,6 +1,7 @@
-<html>
+<html class="dark-mode">
     <head>
         <title>Francesco Montanaro</title>
+        <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="images/logo.ico">
@@ -15,6 +16,7 @@
             <a href="skills.html">Skills</a>
             <a class="selected" href="about.html">About</a>
             <a href="contacts.html">Contacts</a>
+            <img class="theme-btn" style="margin-left: 15px;" onclick="changeColorScheme();"></img>
         </div>
     </header>
     <body>
@@ -29,6 +31,7 @@
             <a href="skills.html">Skills</a>
             <a class="selected" href="about.html">About</a>
             <a href="contacts.html">Contacts</a>
+            <img class="theme-btn" onclick="changeColorScheme();"></img>
         </div>
         <div class="main-content" style="padding-bottom: 50px;">
             <h1 class="title">About me</h1>
@@ -53,9 +56,9 @@
             <div class="about-section">
                 <div class="about-subsection about-images-subsection">
                     <div>
-                        <img src="images/polimi.png" width="50%">
+                        <img class="polimi">
                         <br>
-                        <img src="images/unicas.png" width="30%" style="margin-top: 30px;">
+                        <img class="unicas" style="margin-top: 30px;">
                     </div>
                 </div>
                 <div class="about-subsection about-description-subsection">
@@ -95,7 +98,7 @@
                     </div>
                 </div>
                 <div class="about-subsection about-images-subsection">
-                    <div id="shell" class="shell" style="width: 90%; font-size: 14px;">
+                    <div id="shell" class="shell aboutShell" style="width: 80%; font-size: 14px;">
                     </div>
                 </div>
             </div>
@@ -114,5 +117,6 @@
 
         document.getElementById("age").innerHTML = getAge(born_date, current_date);
     </script>
+    <script src="js/colorScheme.js"></script>
     <script src="js/menu.js"></script>
 </html>

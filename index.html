@@ -1,6 +1,7 @@
-<html>
+<html class="dark-mode">
     <head>
         <title>Francesco Montanaro</title>
+        <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="images/logo.ico">
@@ -15,6 +16,7 @@
             <a href="skills.html">Skills</a>
             <a href="about.html">About</a>
             <a href="contacts.html">Contacts</a>
+            <img class="theme-btn" style="margin-left: 15px;" onclick="changeColorScheme();"></img>
         </div>
     </header>
     <body>
@@ -29,6 +31,7 @@
             <a href="skills.html">Skills</a>
             <a href="about.html">About</a>
             <a href="contacts.html">Contacts</a>
+            <img class="theme-btn" onclick="changeColorScheme();"></img>
         </div>
         <div class="index-main-area">
             <div class="main-area">
@@ -44,12 +47,13 @@
                 </div>
             </div>
             <div class="footer">
-                <a href="https://www.linkedin.com/in/francesco-montanaro-59452a216/"><img src="images/linkedin.svg"></a>
-                <a href="https://twitter.com/_CSRF1534"><img src="images/twitter.svg"></a>
-                <a href="https://github.com/FrancescoMontanaro"><img src="images/github.svg"></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/francesco-montanaro-59452a216/"></a>
+                <a class="twitter" href="https://twitter.com/_CSRF1534"></a>
+                <a class="github" href="https://github.com/FrancescoMontanaro"></a>
             </div>
         </div>
     </body>
+    <script src="js/colorScheme.js"></script>
     <script src="js/index.js"></script>
     <script src="js/menu.js"></script>
 </html>
