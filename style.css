@@ -20,6 +20,12 @@ body{
     color: #000;
 }
 
+.index-body{
+    background-image: radial-gradient(circle at 1px 1px, rgb(70, 70, 70) 1px, transparent 0);
+    background-size: 50px 50px;
+    box-shadow: inset -2px 0px 0px 15px #fff;
+}
+
 header{
     width: calc(100% - 80px);
     padding: 20px;
@@ -73,7 +79,7 @@ header h4{
 
 .index-header{
     z-index: 2300;
-    background-color: transparent;
+    background-color: transparent !important;
     border-bottom: none !important;
 }
 
@@ -619,6 +625,10 @@ input:focus, textarea:focus{
     .btn{
         display: block;
     }
+    .index-body{
+        background-image: none;
+        box-shadow: none;
+    }
 }
 
 .about-section{
@@ -776,7 +786,11 @@ input:focus, textarea:focus{
         -webkit-order: 1;
     }
     .index-header{
-        background-color: #fff;
+        background-color: #fff !important;
+        border-bottom: 1px solid #e6e6e6e6;
+    }
+    .dark-mode .index-header{
+        background-color: #222226 !important;
         border-bottom: 1px solid #e6e6e6e6;
     }
 }
@@ -893,6 +907,10 @@ input:focus, textarea:focus{
 .dark-mode body{
     background-color: #222226;
     color: #fff;
+}
+
+.dark-mode .index-body{
+    box-shadow: inset -2px 0px 0px 15px #222226;
 }
 
 .dark-mode .menu{
