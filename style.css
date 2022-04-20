@@ -1024,3 +1024,11 @@ input:focus, textarea:focus{
 .dark-mode .theme-btn{
     content: url(images/sun.svg);
 }
+
+.dark-mode .line{
+    border-left: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.dark-mode .contacts-container .contacts-subcontainer:nth-child(1){
+    border-right: 1px solid rgba(230, 230, 230, 0.4);
+}
