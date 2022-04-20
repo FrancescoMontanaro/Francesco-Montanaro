@@ -133,17 +133,30 @@ button:not(:hover){
 .footer{
     position: absolute;
     bottom: 0;
-    width: calc(100% -80px);
+    width: calc(100% - 80px);
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+.footer .footer-social-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-start;
     gap: 8px;
 }
-.footer a{
+.footer .footer-growing-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.footer .footer-social-btns a{
     border-radius: 50%; 
     width: 40px;
     height: 40px;
@@ -152,24 +165,24 @@ button:not(:hover){
     background-position: center; 
     background-size: 22px;
 }
-.footer a:hover{
+.footer .footer-social-btns a:hover{
     transition: 0.5s background-color;
     background-color: #e6e6e6e6;
 }
-.footer a:not(:hover){
+.footer .footer-social-btns a:not(:hover){
     transition: 0.8s background-color;
     background-color: transparent;
 }
 
-.footer .linkedin{
+.footer .footer-social-btns .linkedin{
     background-image: url(images/linkedin.svg);
 }
 
-.footer .twitter{
+.footer .footer-social-btns .twitter{
     background-image: url(images/twitter.svg);
 }
 
-.footer .github{
+.footer .footer-social-btns .github{
     background-image: url(images/github.svg);
 }
 
@@ -695,6 +708,37 @@ input:focus, textarea:focus{
     z-index: 2200;
 }
 
+.growing-button{
+    max-width: 22px;
+    border-radius: 22px;
+    background-color: #2f75ef;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: max-width 0.8s;
+    -webkit-transition: max-width 0.8s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    white-space: nowrap;
+}
+
+.growing-button img{
+    width: 22px;
+}
+
+.growing-button:hover{
+    max-width: 200px;
+}
+
+.growing-button:not(:hover){
+    max-width: 22px;
+}
+
 @media only screen and (max-width: 1180px) {
     .contacts-container{
         display: block;
@@ -792,6 +836,9 @@ input:focus, textarea:focus{
     .dark-mode .index-header{
         background-color: #222226 !important;
         border-bottom: 1px solid #e6e6e6e6;
+    }
+    .footer .footer-growing-btns{
+        display: none;
     }
 }
 
@@ -921,19 +968,19 @@ input:focus, textarea:focus{
     box-shadow:  5px 5px 10px #1c1c1f,-5px -5px 10px #28282d;
 }
 
-.dark-mode .footer a:hover{
+.dark-mode .footer .footer-social-btns a:hover{
     background-color: #2f75ef;
 }
 
-.dark-mode .footer .linkedin{
+.dark-mode .footer .footer-social-btns .linkedin{
     background-image: url(images/linkedin-white.svg);
 }
 
-.dark-mode .footer .twitter{
+.dark-mode .footer .footer-social-btns .twitter{
     background-image: url(images/twitter-white.svg);
 }
 
-.dark-mode .footer .github{
+.dark-mode .footer .footer-social-btns .github{
     background-image: url(images/github-white.svg);
 }
 
