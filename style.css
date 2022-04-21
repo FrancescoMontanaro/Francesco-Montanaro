@@ -717,6 +717,7 @@ input:focus, textarea:focus{
     color: #fff;
     transition: max-width 0.8s;
     -webkit-transition: max-width 0.8s;
+    transition-delay: 0.1s;
     overflow: hidden;
     display: flex;
     flex-direction: row;
