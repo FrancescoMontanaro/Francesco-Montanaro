@@ -51,6 +51,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
         html.classList.remove("dark-mode");
         document.getElementsByName('theme-color')[0].setAttribute("content", "#ffffff");
     }
+
+    location.reload();
 });
 
 
