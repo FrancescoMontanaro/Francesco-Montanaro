@@ -40,6 +40,7 @@ function colorScheme(){
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     const new_color_scheme = event.matches ? "dark" : "light";
+    let html = document.getElementsByTagName('html')[0];
     
     if (new_color_scheme === "dark"){
         localStorage.setItem("colorScheme", "dark");
@@ -51,8 +52,6 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
         html.classList.remove("dark-mode");
         document.getElementsByName('theme-color')[0].setAttribute("content", "#ffffff");
     }
-
-    location.reload();
 });
 
 
