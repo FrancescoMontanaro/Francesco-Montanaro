@@ -929,7 +929,6 @@ input:focus, textarea:focus{
     }
     .picture{
         width: 330px;
-        height: 330px;
     }
     .not-found img{
         width: 80%;
