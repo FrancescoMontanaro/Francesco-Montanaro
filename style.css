@@ -283,22 +283,8 @@ input:focus, textarea:focus{
     100% { transform: rotate(360deg); }
 }
 
-.about-container{
-    display: flex;
-    width: 100%;
-    margin: 0;
-    align-items: center;
-    align-items: stretch;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.about-container:nth-child(odd){
-    text-align: right;
-}
-
 .main-content{
-    width: calc(100% -80px);
+    width: calc(100% - 80px);
     min-height: calc(100% -60px);
     padding-top: 70px;
     padding-left: 40px;
@@ -661,22 +647,18 @@ input:focus, textarea:focus{
     justify-content: center;
 }
 
-.about-section:nth-child(n+3){
-    margin-top: 50px;
-}
-
-.about-section:nth-child(even) .about-subsection:nth-child(1){
+.about-section-left .about-subsection:nth-child(1){
     width: 60%;
     text-align: left;
     margin-right: 20px;
 }
 
-.about-section:nth-child(even) .about-subsection:nth-child(2), .about-section:nth-child(odd) .about-subsection:nth-child(1){
+.about-section-left .about-subsection:nth-child(2), .about-section-right .about-subsection:nth-child(1){
     width: 40%;
     text-align: center;
 }
 
-.about-section:nth-child(odd) .about-subsection:nth-child(2){
+.about-section-right .about-subsection:nth-child(2){
     width: 60%;
     margin-left: 20px;
     text-align: right;
@@ -743,6 +725,11 @@ input:focus, textarea:focus{
     max-width: 22px;
 }
 
+.about-subtitle{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 1180px) {
     .contacts-container{
         display: block;
@@ -752,7 +739,7 @@ input:focus, textarea:focus{
         width: 100%;
     }
     .contacts-container .contacts-subcontainer:nth-child(1){
-        border: none;
+        border: none !important;
     }
     .contacts-container .contacts-subcontainer:nth-child(2){
         margin: 0;
@@ -848,6 +835,7 @@ input:focus, textarea:focus{
 
 @media only screen and (max-width: 800px) {
     .main-content{
+        width: calc(100% - 40px);
         padding: 20px;
         padding-top: 70px;
     }
@@ -892,9 +880,9 @@ input:focus, textarea:focus{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-top: 10px !important;
+        margin-top: 30px !important;
     }
-    .about-images-subsection div{
+    .about-images-subsection div:not(.shell){
         width: calc(100% - 40px);
         display: flex;
         flex-direction: row;
@@ -910,6 +898,10 @@ input:focus, textarea:focus{
     .aboutShell{
         width: 100% !important;
         text-align: left !important;
+    }
+    .about-subtitle{
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1022,4 +1014,64 @@ input:focus, textarea:focus{
 
 .dark-mode .contacts-container .contacts-subcontainer:nth-child(1){
     border-right: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.timeline .timeline-item{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 15px;
+    max-width: 100%;
+}
+
+.tl-line{
+    width: 1px;
+    position: relative;
+    border-left: 1.5px solid #2f75ef;
+    z-index: 1;
+}
+
+.progress-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1.5px solid #2f75ef;
+    position: absolute;
+    left: -9.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-dot div{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2f75ef;
+}
+
+.progress-dot-current{
+    border: 2px dotted #2f75ef;
+    animation: spin 6s linear infinite;
+    left: -10.5px;
+}
+
+.tl-date{
+    text-align: right;
+    min-width: 130px;
+}
+
+.tl-description{
+    text-align: left;
+    flex-wrap: wrap;
+    width: 80% !important;
 }
