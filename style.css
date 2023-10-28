@@ -188,17 +188,17 @@ button:not(:hover){
 }
 
 .polimi{
-    content: url(images/polimi.png);
+    content: url(images/polimi.svg);
     width: 50%;
 }
 
 .unicas{
-    content: url(images/unicas.png);
+    content: url(images/unicas.svg);
     width: 30%;
 }
 
 .cambridge{
-    content: url(images/cambridge.png);
+    content: url(images/cambridge.svg);
     width: 80%;
 }
 
@@ -979,18 +979,15 @@ input:focus, textarea:focus{
 }
 
 .dark-mode .polimi{
-    content: url(images/polimi-white.png);
-    width: 70%;
+    content: url(images/polimi-white.svg);
 }
 
 .dark-mode .unicas{
-    content: url(images/unicas-white.png);
-    width: 30%;
+    content: url(images/unicas-white.svg);
 }
 
 .dark-mode .cambridge{
-    content: url(images/cambridge-white.png);
-    width: 80%;
+    content: url(images/cambridge-white.svg);
 }
 
 .dark-mode input, .dark-mode textarea{
