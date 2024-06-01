@@ -1134,13 +1134,16 @@ input:focus, textarea:focus{
 
 .tl-date{
     text-align: right;
-    min-width: 130px;
 }
 
 .tl-description{
     text-align: left;
     flex-wrap: wrap;
     width: 80% !important;
+}
+
+.tl-description ul{
+    padding-inline-start: 20px;
 }
 
 .check-mark{
