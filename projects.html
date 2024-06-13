@@ -38,12 +38,168 @@
             <h1 class="title">Projects</h1>
             <div class="project">
                 <div class="project-section project-description-section">
+                    <h2 class="sub-title">Real-Time Detection of Damages in Jersey Barriers</h2>
+                    <b>Date: </b>04/2024<br>
+                    <b>Technologies Involved: </b>Python, Deep Learning, OpenCV, Tensorflow, Pytorch, Docker, MLOps, Quantization.<br>
+                    <br>
+                    <div class="project-description">
+                        The project focuses on developing an advanced algorithm for the automated detection and classification of defects in Jersey barriers along Italian highways. This algorithm is part of a comprehensive system that captures images using cameras mounted on the roof of a moving vehicle, analyzing them in real time.<br>
+                        The algorithm identifies the segments of guardrails to be examined and detects damaged Dywidag elements. Upon identifying a damaged element, the system promptly sends a notification to designated brokers, ensuring timely maintenance and repair actions.<br>
+                        Key features included:
+                        <ul>
+                            <li>
+                                <b>Segment Identification</b>: Accurately isolates Jersey barrier segments for inspection.
+                            </li>
+                            <li>
+                                <b>Defect Detection</b>: Targets damaged Dywidag elements using advanced image processing and machine learning techniques.
+                            </li>
+                            <li>
+                                <b>Real-Time Analysis</b>: Ensures immediate identification of anomalies with high processing speed.
+                            </li>
+                            <li>
+                                <b>Notification System</b>: Sends instant alerts with geolocation data and images to maintenance teams upon detecting defects.
+                            </li>
+                            <li>
+                                <b>Data Logging and Reporting</b>: Generates detailed reports on defect types, frequencies, and locations for predictive maintenance.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-section project-images-section">
+                    <img width="100%" style="border-radius: 10px; max-width: 500px;" src="images/jersey_barriers.jpg">
+                    <img width="100%" style="border-radius: 10px; margin-top: 10px; max-width: 500px;" src="images/monitoring_vehicle.jpeg">
+                </div>
+            </div>
+            <div class="project">
+                <div class="orchestrator-project project-section project-images-section">
+                    <img width="100%" style="border-radius: 10px;" src="images/orchestrator_2.jpg">
+                    <img width="100%" style="border-radius: 10px;" src="images/orchestrator_1.jpeg">
+                </div>
+                <div class="project-section project-description-section">
+                    <h2 class="sub-title">Orchestration System for Real-time Monitoring and Managing Unsupervised RPA Processes</h2>
+                    <b>Date: </b>06/2023<br>
+                    <b>Technologies Involved: </b>Python, Pandas, Numpy, Docker, MySQL, DevOps, Flask.<br>
+                    <br>
+                    <div class="project-description">
+                        This project involves the development of an advanced Orchestration system designed to manage and monitor unsupervised Robotic Process Automation (RPA) processes. The primary goal was to enhance operational efficiency by automating routine tasks that do not require human oversight while maintaining the capability for real-time remote monitoring and control.<br>
+                        In a typical use case, the system automates general purpose processes interacting with external sources, updating the platform’s database with the latest information. Authorized users can interact with the system through a secure interface to initiate processes or retrieve status updates. The orchestrator manages the workflow and oversees the execution of tasks by individual RPA processes. The system continuously monitors performance and logs activities, providing notifications in case of errors or significant events, ensuring smooth and efficient operations.<br>
+                        Key features included:
+                        <ul>
+                            <li>
+                                <b>User Interaction Management</b>: The system handles user interactions via secure HTTPS and WebSocket connections, ensuring encrypted communication and real-time status updates.
+                            </li>
+                            <li>
+                                <b>Orchestrator Component</b>: Acts as the central controller, managing the automation processes, job queues, configuration modifications, and supervising processes activities. Facilitates the management and execution of processes, including starting, stopping, and updating configurations, while ensuring secure communication through a shared Docker network.
+                            </li>
+                            <li>
+                                <b>Autonomous Task Execution</b>: Robots execute specific tasks autonomously, such as data extraction, processing, and interaction with external APIs, ensuring tasks are completed efficiently without manual intervention.
+                            </li>
+                            <li>
+                                <b>Real-time Monitoring and Logging</b>: Utilizes robust logging and notification mechanisms to monitor system health, detect anomalies, and provide real-time updates to users.
+                            </li>
+                            <li>
+                                <b>Error Handling and Loop Detection</b>: Implements mechanisms to detect and handle errors, including persistent loop states, ensuring system stability and resource optimization.
+                            </li>
+                            <li>
+                                <b>Batch Processing</b>: Processes tasks in batches to optimize system performance and prevent overloading, ensuring efficient handling of large data sets.
+                            </li>
+                            <li>
+                                <b>Statistical Analysis</b>: Calculates estimated time of arrival (ETA) and completion percentages for ongoing processes, providing clear visibility into process progress and performance.
+                            </li>
+                            <li>
+                                <b>Scalable Architecture</b>: Designed for scalability and flexibility, the system utilizes containerization with Docker to ensure isolated and efficient execution environments for each component.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-section project-description-section">
+                    <h2 class="sub-title">CryptoBot</h2>
+                    <b>Date: </b>04/2022<br>
+                    <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/CryptoBot">GitHub</a><br>
+                    <b>Technologies Involved: </b>Python, Binance<sup style="font-size: 8px;">&reg;</sup> API.<br>
+                    <br>
+                    <div class="project-description">
+                        This project is a free and open source trading bot written in Python, 
+                        designed to operate over different cryptocurrencies simoultaneously on the Binance<sup style="font-size: 8px;">&reg;</sup> Spot Exchange. 
+                        The purpose is to collect real time data of different symbols, compute statistical 
+                        indicators, and select the most promising one according to the selected entry strategy. More in details, 
+                        the bot is designed to execute many buy and sell transactions, each one with a fixed profit, taking advantage 
+                        of compound interest by investing all the available balance with each operation.<br>
+                        Key features:
+                        <ul>
+                            <li>
+                                Realtime data collecion and processing.
+                            </li>
+                            <li>
+                                Scalable to different trading strategies and symbols.
+                            </li>
+                            <li>
+                                Integration with Discord<sup style="font-size: 8px;">&reg;</sup> notifications.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-section project-images-section">
+                    <img width="100%" style="border-radius: 10px;" src="images/trading.png">
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 20px; gap: 10px">
+                        <img width="15%" src="images/btc.png">
+                        <img width="15%" src="images/eth.png">
+                        <img width="15%" src="images/bnb.png">
+                        <img width="15%" src="images/ada.png">
+                        <img width="15%" src="images/sol.png">
+                        <img width="15%" src="images/xrp.png">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-section project-images-section">
+                    <div class="pluto-images" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <div style="width: 40%; margin-right: 10px;">
+                            <img width="100%" style="border-radius: 10px; margin-bottom: 10px;" src="https://user-images.githubusercontent.com/56433128/124288572-9c892680-db51-11eb-9521-fcc2d96d683e.png">
+                            <img width="100%" style="border-radius: 10px;" src="https://user-images.githubusercontent.com/56433128/124291650-1242c180-db55-11eb-985d-493ca74929bf.jpg">
+                        </div>
+                        <video style="border-radius: 10px;" width="53.5%" controls poster="images/preview.PNG">
+                            <source src="https://user-images.githubusercontent.com/56433128/124289363-8334aa00-db52-11eb-8380-9e9f99b27d3f.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="project-section project-description-section">
+                    <h2 class="sub-title">Pluto</h2>
+                    <b>Date: </b>04/2021<br>
+                    <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/Pluto">GitHub</a><br>
+                    <b>Technologies Involved: </b>Arduino uno, Raspberry Pi, C++, Python, Node.js, Javascript, HTML, CSS.<br>
+                    <br>
+                    <div class="project-description">
+                        Pluto is a robot built to engage people to visit the virtual exposition of the space exhibition at 
+                        the Museo Nazionale Scienza e Tecnologia Leonardo da Vinci during the Covid pandemic. 
+                        The objective was to create one single robot, easy to use, that could be deployed by anyone who 
+                        reads the simple manual and that accomplish two different missions:
+                        <ul>
+                            <li>
+                                First scenario is during covid, so the idea was to attract people at 
+                                train stations, or semi-public areas with the objective of getting peoples 
+                                attention and inviting them to visit the virtual exposition.
+                            </li>
+                            <li>
+                                The second one was to be placed inside the museum after it opens, being part 
+                                of the exhibition itself.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-section project-description-section">
                     <h2 class="sub-title">SharkIO</h2>
                     <b>Date: </b>02/2021<br>
                     <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/SharkIO">GitHub</a><br>
                     <b>Technologies Involved: </b>HTML, CSS, Javascript, Node.js, MongoDB.<br>
+                    <br>
                     <div class="project-description">
-                        <b>Project Description: </b>SharkIO is a Web Application which allows users to subscribe and manage their subscription to a generic digital service (in this case a google chrome extension).
+                        SharkIO is a Web Application which allows users to subscribe and manage their subscription to a generic digital service (in this case a google chrome extension).
                         To access the service users have to login with their Discord Account. Once logged in, they can subscribe to the service by paying with their credit card. The payment 
                         flow has been implemented by using Stripe's technologies. In this case, the subscription is composed by an initial setup fee, plus a recurrent monthly payment. Once that 
                         users are subscribed to the service, they can access their personal dashboard, through which thay can retrive all the information related to their subscription, or perform 
@@ -74,49 +230,23 @@
             </div>
             <div class="project">
                 <div class="project-section project-images-section">
-                    <div class="pluto-images" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                        <div style="width: 40%; margin-right: 10px;">
-                            <img width="100%" style="border-radius: 10px; margin-bottom: 10px;" src="https://user-images.githubusercontent.com/56433128/124288572-9c892680-db51-11eb-9521-fcc2d96d683e.png">
-                            <img width="100%" style="border-radius: 10px;" src="https://user-images.githubusercontent.com/56433128/124291650-1242c180-db55-11eb-985d-493ca74929bf.jpg">
-                        </div>
-                        <video style="border-radius: 10px;" width="53.5%" controls poster="images/preview.PNG">
-                            <source src="https://user-images.githubusercontent.com/56433128/124289363-8334aa00-db52-11eb-8380-9e9f99b27d3f.mp4" type="video/mp4">
-                        </video>
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672469-eaa23f80-d1cb-11eb-8ebf-f21aca9685fe.png">
+                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672477-ef66f380-d1cb-11eb-82e5-c62845a554b3.png">
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672481-f130b700-d1cb-11eb-9052-dfdbc4fe1709.png">
+                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672483-f42ba780-d1cb-11eb-8530-ffc9115dd509.png">
                     </div>
                 </div>
-                <div class="project-section project-description-section">
-                    <h2 class="sub-title">Pluto</h2>
-                    <b>Date: </b>04/2021<br>
-                    <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/Pluto">GitHub</a><br>
-                    <b>Technologies Involved: </b>Arduino uno, Raspberry Pi, C++, Python, Node.js, Javascript, HTML, CSS.<br>
-                    <div class="project-description">
-                        <b>Project Description: </b>
-                        Pluto is a robot built to engage people to visit the virtual exposition of the space exhibition at 
-                        the Museo Nazionale Scienza e Tecnologia Leonardo da Vinci during the Covid pandemic. 
-                        The objective was to create one single robot, easy to use, that could be deployed by anyone who 
-                        reads the simple manual and that accomplish two different missions:
-                        <ul>
-                            <li>
-                                First scenario is during covid, so the idea was to attract people at 
-                                train stations, or semi-public areas with the objective of getting peoples 
-                                attention and inviting them to visit the virtual exposition.
-                            </li>
-                            <li>
-                                The second one was to be placed inside the museum after it opens, being part 
-                                of the exhibition itself.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
                 <div class="project-section project-description-section">
                     <h2 class="sub-title">CryptoSimulator</h2>
                     <b>Date: </b>01/2021<br>
                     <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/CryptoSimulator">GitHub</a><br>
                     <b>Technologies Involved: </b>React Native, Tensorflow, Expo, Firebase, Javascript, Node.js, Python, Google Cloud Platform.<br>
+                    <br>
                     <div class="project-description">
-                        <b>Project Description: </b>CryptoSimulator is a cross-platform mobile application for monitoring and 
+                        CryptoSimulator is a cross-platform mobile application for monitoring and 
                         forecasting the trend of cryptocurrencies over time. It allows users to be 
                         always up to date on the value of the most important cryptocurrencies by 
                         exploiting interactive graphs and plots. By the implementation of AI algorithms 
@@ -131,36 +261,16 @@
                         predictions made by the AI.
                     </div>
                 </div>
-                <div class="project-section project-images-section">
-                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672469-eaa23f80-d1cb-11eb-8ebf-f21aca9685fe.png">
-                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672477-ef66f380-d1cb-11eb-82e5-c62845a554b3.png">
-                    </div>
-                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672481-f130b700-d1cb-11eb-9052-dfdbc4fe1709.png">
-                        <img width="35%" src="https://user-images.githubusercontent.com/56433128/122672483-f42ba780-d1cb-11eb-8530-ffc9115dd509.png">
-                    </div>
-                </div>
             </div>
             <div class="project">
-                <div class="project-section project-images-section">
-                    <div class="pluto-images" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                        <div style="width: 52%; margin-right: 10px;">
-                            <img width="100%" style="border-radius: 10px; margin-bottom: 10px;" src="images/mask1.jpg">
-                            <img width="100%" style="border-radius: 10px;" src="images/mask2.jpg">
-                        </div>
-                        <div style="width: 48%;">
-                            <img style="border-radius: 10px;" width="100%" src="images/mask3.jpg">
-                        </div>
-                    </div>
-                </div>
                 <div class="project-section project-description-section">
                     <h2 class="sub-title">Mask Recognition</h2>
                     <b>Date: </b>11/2020<br>
                     <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/Mask-Recognition">GitHub</a><br>
                     <b>Technologies Involved: </b>Python, Tensorflow.<br>
+                    <br>
                     <div class="project-description">
-                        <b>Project Description: </b>
+                        
                         The project is dedicated to solve an image classification problem on a proposed dataset. 
                         In particular, the purpose is to classify images depicting groups of people based on the number of masked people. 
                         In the specific, the solution must discriminate between images depending on the following cases:
@@ -181,43 +291,15 @@
                         and of exploiting the knowledge of some pretrained models by using the Transfer Learning Technique.
                     </div>
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-section project-description-section">
-                    <h2 class="sub-title">CryptoBot</h2>
-                    <b>Date: </b>04/2022<br>
-                    <b>Source Code: </b><a href="https://github.com/FrancescoMontanaro/CryptoBot">GitHub</a><br>
-                    <b>Technologies Involved: </b>Python, Binance<sup style="font-size: 8px;">&reg;</sup> API.<br>
-                    <div class="project-description">
-                        <b>Project Description: </b>This project is a free and open source trading bot written in Python, 
-                        designed to operate over different cryptocurrencies simoultaneously on the Binance<sup style="font-size: 8px;">&reg;</sup> Spot Exchange. 
-                        The purpose is to collect real time data of different symbols, compute statistical 
-                        indicators, and select the most promising one according to the selected entry strategy. More in details, 
-                        the bot is designed to execute many buy and sell transactions, each one with a fixed profit, taking advantage 
-                        of compound interest by investing all the available balance with each operation.<br>
-                        Key features:
-                        <ul>
-                            <li>
-                                Realtime data collecion and processing.
-                            </li>
-                            <li>
-                                Scalable to different trading strategies and symbols.
-                            </li>
-                            <li>
-                                Integration with Discord<sup style="font-size: 8px;">&reg;</sup> notifications.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="project-section project-images-section">
-                    <img width="100%" style="border-radius: 10px;" src="images/trading.png">
-                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 20px; gap: 10px">
-                        <img width="15%" src="images/btc.png">
-                        <img width="15%" src="images/eth.png">
-                        <img width="15%" src="images/bnb.png">
-                        <img width="15%" src="images/ada.png">
-                        <img width="15%" src="images/sol.png">
-                        <img width="15%" src="images/xrp.png">
+                    <div class="pluto-images" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <div style="width: 52%; margin-right: 10px;">
+                            <img width="100%" style="border-radius: 10px; margin-bottom: 10px;" src="images/mask1.jpg">
+                            <img width="100%" style="border-radius: 10px;" src="images/mask2.jpg">
+                        </div>
+                        <div style="width: 48%;">
+                            <img style="border-radius: 10px;" width="100%" src="images/mask3.jpg">
+                        </div>
                     </div>
                 </div>
             </div>

@@ -454,6 +454,12 @@ input:focus, textarea:focus{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+}
+
+.project:nth-of-type(n+2) {
+    border-top: 1px solid #e6e6e6e6;
+    padding-top: 30px;
 }
 
 .project .project-section .sub-title{
@@ -745,6 +751,18 @@ input:focus, textarea:focus{
     border-radius: 8px;
 }
 
+.orchestrator-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.orchestrator-project img{
+    max-width: 350px;
+}
+
 @media only screen and (max-width: 1180px) {
     .contacts-container{
         display: block;
@@ -811,6 +829,7 @@ input:focus, textarea:focus{
         display: flex;
         flex-direction: column;
         margin-top: 0;
+        gap: 0;
     }
     .project:nth-child(n+3){
         margin-top: 30px;
@@ -940,6 +959,19 @@ input:focus, textarea:focus{
     .not-found img{
         width: 80%;
     }
+    .project:nth-of-type(n+2) {
+        border-top: 1px solid #e6e6e6e6;
+        padding-top: 10px;
+    }
+    .orchestrator-project{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .orchestrator-project img{
+        width: 48%;
+    }
 }
 
 
@@ -1031,6 +1063,10 @@ input:focus, textarea:focus{
 
 .dark-mode .contacts-container .contacts-subcontainer:nth-child(1){
     border-right: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.dark-mode .project:nth-of-type(n+2) {
+    border-top: 1px solid rgb(53, 53, 53);
 }
 
 .timeline{
