@@ -751,18 +751,6 @@ input:focus, textarea:focus{
     border-radius: 8px;
 }
 
-.orchestrator-project{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.orchestrator-project img{
-    max-width: 350px;
-}
-
 @media only screen and (max-width: 1180px) {
     .contacts-container{
         display: block;
@@ -837,6 +825,9 @@ input:focus, textarea:focus{
     .project .project-section{
         width: 100% !important;
         margin: 0;
+    }
+    .project .project-section .project-description{
+        text-align: left;
     }
     .project .project-section .project-description ul{
         padding-left: 20px !important;
@@ -962,15 +953,6 @@ input:focus, textarea:focus{
     .project:nth-of-type(n+2) {
         border-top: 1px solid #e6e6e6e6;
         padding-top: 10px;
-    }
-    .orchestrator-project{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .orchestrator-project img{
-        width: 48%;
     }
 }
 
