@@ -1204,7 +1204,7 @@ input:focus, textarea:focus{
 
 
 .expandable-image{
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .expandable-image:hover{
