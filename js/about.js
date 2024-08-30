@@ -10,11 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         index++;
         setTimeout(type, 100);
       }
-      else{
-        setTimeout(function(){
-            shell.innerHTML += "<br>- Albert Einstein";
-        }, 500);
-      }
     }
   
     type();
