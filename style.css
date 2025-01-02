@@ -199,7 +199,12 @@ button:not(:hover){
 
 .cambridge{
     content: url(images/cambridge.svg);
-    width: 80%;
+    width: 70%;
+}
+
+.nvidia{
+    content: url(images/nvidia.svg);
+    width: 40%;
 }
 
 
@@ -1010,6 +1015,10 @@ input:focus, textarea:focus{
 
 .dark-mode .cambridge{
     content: url(images/cambridge-white.svg);
+}
+
+.dark-mode .nvidia{
+    content: url(images/nvidia-white.svg);
 }
 
 .dark-mode input, .dark-mode textarea{
