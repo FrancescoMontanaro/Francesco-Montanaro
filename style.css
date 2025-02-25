@@ -396,15 +396,6 @@ input:focus, textarea:focus{
     margin-bottom: 5px;
 }
 
-.skills{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    padding-bottom: 100px;
-}
-
 .line{
     width: 1px;
     border-left: 1px solid #e6e6e6e6;
@@ -756,6 +747,34 @@ input:focus, textarea:focus{
     border-radius: 8px;
 }
 
+.skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.skill-bubble-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill-category + .skill-category{
+    margin-top: 40px;
+}
+
+.skill-bubble{
+    background-color: #2f75ef;
+    padding: 6px 12px;
+    width: fit-content;
+    border-radius: 20px;
+    color: #fff;
+}
+
 @media only screen and (max-width: 1180px) {
     .contacts-container{
         display: block;
@@ -770,19 +789,6 @@ input:focus, textarea:focus{
     .contacts-container .contacts-subcontainer:nth-child(2){
         margin: 0;
         margin-top: 40px;
-    }
-}
-
-@media only screen and (max-width: 1240px) {
-    .skills .line{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1170px) {
-    .skills{
-        display: block;
-        padding-bottom: 30px !important;
     }
 }
 
